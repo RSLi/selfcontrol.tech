@@ -1,0 +1,116 @@
+{
+    "username": "John Doe",
+    "reportData": {
+        "2017-03-25": {
+            "1": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "2": {
+                "tag": "sleep",
+                "efficiency": 2
+            },
+            "3": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "4": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "5": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "6": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "7": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "8": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "9": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "10": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "11": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "12": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "13": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "14": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "15": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "16": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "17": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "18": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "19": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "20": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "21": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "22": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "23": {
+                "tag": "sleep",
+                "efficiency": 1
+            },
+            "24": {
+                "tag": "sleep",
+                "efficiency": 1
+            }
+        }
+    },
+    "preference": {
+        "colorMap": {
+            "sleep":"black",
+            "idle":"grey",
+            "entertainment":"red",
+            "homework":"orange",
+            "work":"green",
+            "social":"gold",
+            "exercise":"yellow",
+            "meeting":"DarkGreen",
+            "other":"white"
+        }
+    }
+}

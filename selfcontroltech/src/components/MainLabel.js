@@ -5,7 +5,7 @@ export default class MainLable extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            hasData:false
+            hasData:false //TODO: Actually try to find data
         }
     }
 

@@ -7,7 +7,7 @@ export default class MainLable extends Component {
         super(props);
         this.state = {
             hasData: ((typeof models.getDailyReport(moment().subtract(1, "days").format('Y-M-D'))) !== "undefined")
-        }
+        };
     }
 
     render() {

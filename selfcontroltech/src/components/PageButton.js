@@ -5,7 +5,7 @@ export default class PageButton extends Component {
         super(props);
         this.handleClick = this.handleClick.bind(this);
     }
-    
+
     handleClick(event) {
         this.props.onPageChange(this.props.pageName);
     }
@@ -13,7 +13,7 @@ export default class PageButton extends Component {
     render() {
         return (
             <div className="App-button">
-                <button onClick={this.handleClick}>{this.props.label}</button>
+                <a onClick={this.handleClick}>{this.props.label}</a>
             </div>
         );
     }

@@ -38,35 +38,41 @@ export default class DailyReportForm extends Component {
     render() {
         const hour_num = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
         const listItems = hour_num.map((hour) =>
-            <li key={hour.toString()}>
-                <label>{hour.toString()}</label>
-                <select id="{'hour_select_' + hour.toString()}"
-                    ref={(input) => {
-                        if (!this.input) {
-                            this.input = [];
-                        }
-                        this.input[hour] = input;
-                    }}
-                    className="App-formSelect" defaultValue={this.state.hasReport?this.state.report[hour].tag:"idle"}>
-                    <option value="idle">idle</option>
-                    <option value="sleep">sleep</option>
-                    <option value="entertainment">entertainment</option>
-                    <option value="homework">homework</option>
-                    <option value="work">work</option>
-                    <option value="meeting">meeting</option>
-                    <option value="social">social</option>
-                    <option value="exercise">exercise</option>
-                    <option value="other">other</option>
-                </select>
-            </li>
+            <tr key={hour.toString()}>
+                <td>{hour.toString()}</td>
+                <td>
+                    <select id="{'hour_select_' + hour.toString()}"
+                        ref={(input) => {
+                            if (!this.input) {
+                                this.input = [];
+                            }
+                            this.input[hour] = input;
+                        }}
+                        className="App-formSelect" defaultValue={this.state.hasReport?this.state.report[hour].tag:"idle"}>
+                        <option value="idle">idle</option>
+                        <option value="sleep">sleep</option>
+                        <option value="entertainment">entertainment</option>
+                        <option value="homework">homework</option>
+                        <option value="work">work</option>
+                        <option value="meeting">meeting</option>
+                        <option value="social">social</option>
+                        <option value="exercise">exercise</option>
+                        <option value="other">other</option>
+                    </select>
+                </td>
+            </tr>
         );
 
         return (
             <form onSubmit={this.handleSubmit}>
-                <ul style={{"listStyle": "none"}}>
-                    {listItems}
-                </ul>
-                <input type="submit" value="Submit" />
+                <table>
+                    <tbody>
+                        {listItems}
+                    </tbody>
+                    <tfoot>
+                        <tr><td></td><td><input className="App-button" type="submit" value="Submit" /></td></tr>
+                    </tfoot>
+                </table>
             </form>
         );
     }

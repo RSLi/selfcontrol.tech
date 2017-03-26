@@ -42,7 +42,6 @@ export default class EditScreen extends Component {
                     <DailyReportForm date={this.state.date}/>
                 </div>
                 <div className="App-datePicker">
-                    <div>{this.state.date}</div>
                     <InfiniteCalendar onSelect={this.handleChangeDate}/>
                 </div>
             </div>

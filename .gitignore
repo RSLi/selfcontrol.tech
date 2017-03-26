@@ -1,5 +1,5 @@
 test
-!chrome
+chrome
 # Logs
 logs
 *.log

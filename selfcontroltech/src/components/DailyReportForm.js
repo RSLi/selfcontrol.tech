@@ -36,12 +36,15 @@ export default class DailyReportForm extends Component {
     }
 
     render() {
+        const listOptions = models.getData().preference.tags.map((tagName) =>
+            <option key={tagName} value={tagName}>{tagName}</option>
+        );
         const hour_num = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
         const listItems = hour_num.map((hour) =>
             <tr key={hour.toString()}>
                 <td>{hour.toString()}</td>
                 <td>
-                    <select id="{'hour_select_' + hour.toString()}"
+                    <select
                         ref={(input) => {
                             if (!this.input) {
                                 this.input = [];
@@ -49,15 +52,7 @@ export default class DailyReportForm extends Component {
                             this.input[hour] = input;
                         }}
                         className="App-formSelect" defaultValue={this.state.hasReport?this.state.report[hour].tag:"idle"}>
-                        <option value="idle">idle</option>
-                        <option value="sleep">sleep</option>
-                        <option value="entertainment">entertainment</option>
-                        <option value="homework">homework</option>
-                        <option value="work">work</option>
-                        <option value="meeting">meeting</option>
-                        <option value="social">social</option>
-                        <option value="exercise">exercise</option>
-                        <option value="other">other</option>
+                        {listOptions}
                     </select>
                 </td>
             </tr>

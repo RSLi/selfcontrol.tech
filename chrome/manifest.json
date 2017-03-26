@@ -1,7 +1,0 @@
-{
-    "name": "Shadow Yesterday",
-    "description": "A web app and Chrome extension that reminds you about what you were doing yesterday/last week/last year at the same hour. Be productive and beat your shadow of yesterday!",
-    "version": "1.0.0",
-    "manifest_version": 2,
-    "chrome_url_overrides" : { "newtab": "build/index.html"}
-}

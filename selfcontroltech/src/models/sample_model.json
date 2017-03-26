@@ -101,6 +101,17 @@
         }
     },
     "preference": {
+        "tags": [
+            "idle",
+            "sleep",
+            "entertainment",
+            "homework",
+            "work",
+            "meeting",
+            "social",
+            "exercise",
+            "other"
+        ],
         "colorMap": {
             "sleep":"black",
             "idle":"grey",

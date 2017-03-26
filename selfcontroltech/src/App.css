@@ -7,5 +7,15 @@
 }
 
 .App-toolbar {
-    
+
+}
+
+.App-datePicker {
+    width: 40%;
+}
+
+.App-reportForm {
+    text-align: center;
+    width: 50%;
+    float:right;
 }

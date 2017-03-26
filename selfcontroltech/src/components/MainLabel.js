@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import models from '../models/models';
 
-export default class MainLable extends Component {
+export default class MainLabel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            hasData: ((typeof models.getDailyReport(moment().subtract(1, "days").format('Y-M-D'))) !== "undefined")
+            hasData: ((typeof models.getDailyReport(moment().subtract(1, "days").format('YYYY-MM-DD'))) !== "undefined")
         };
     }
 
@@ -18,7 +18,7 @@ export default class MainLable extends Component {
                 <div className="sc-main-label">
                     <h2>Yesterday, at {moment().format('h')}</h2>
                     <h5>You were doing:</h5>
-                    <h1>{models.getDailyReport(moment().subtract(1, "days").format('Y-M-D'))[moment().format('H')]}</h1>
+                    <h1>{models.getDailyReport(moment().subtract(1, "days").format('YYYY-MM-DD'))[moment().format('H')].tag}</h1>
                 </div>
             );
         } else {
